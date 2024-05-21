@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu projetos JavaSript</title>
+    <style>
+        body{
+            height: 86vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(BackgroundA.png);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        main{
+            background-color: rgb(31, 31, 34);
+            margin: 100px auto;
+            max-width: 70vw;
+            height: 70vh;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.418);
+            color: white;
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.562);
+        }
+        .center{
+            text-align: center;
+        }
+        #resposta{
+            background-color: white;
+            color: black;
+            max-width: 30vw;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>CALCULADORA</h1>
+            <div>
+                <p class="center">
+                    NÚMERO 01 
+                    <input type="number" name="numero01" id="numero01">
+                </p>
+                <p class="center"> NÚMERO 02
+                    <input type="number" name="numero02" id="numero02">
+                </p>
+                <p class="center">
+                    <input type="button" value="CALCULAR" onclick="calcular()">
+                    <input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+                    <input type="button" value="DIVIDIR" onclick="divisão()">
+                </p>
+            </div>
+            <div id="resposta">
+                None
+            </div>
+        </div>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>
