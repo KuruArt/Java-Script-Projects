@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIPHS STORE</title>
+    <link rel="shortcut icon" href="Logoshopping.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(BackgroundA.png);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(31, 31, 34);
+            margin: 0px 0px;
+            height: 13vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        main{
+            background-color: #1f1f22;
+            margin: 400px auto 20px auto;
+            max-width: 95vw;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.418);
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.562);
+        }
+        #shopicon{
+            width: 100px;
+            position: absolute;
+            left: 40px;
+        }
+        #carricon{
+            width: 160px;
+            border-radius: 20px;
+            position: absolute;
+            right:40px;
+        }
+        #carrlink{
+            height: 80px;
+        }
+        .nome{
+            font-size: 4.5em;
+            position: absolute;
+            left: 170px;
+        }
+        #loja{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        
+        }
+        .item{
+            background-color: rgb(52, 52, 61);
+            border: 1px 1px black;
+            border-radius: 20px;
+            width: max(300px, 100px);
+            height: 600px;
+            margin: 10px;
+            position: relative;
+        }
+        .itemimg{
+            width: max(300px, 100px);
+            border-radius: 20px 20px 0 0;
+        }
+        footer{
+            background-color: #1f1f22;
+            margin-bottom: 0px;
+            padding: 30px;
+        }
+        footer > h2{
+            text-align: center;
+            color: white;
+        }
+        .git{
+            font-style: normal;
+            text-decoration: none;
+            color: white;
+            border-radius: 7px;
+            padding: 4px;
+        }
+        .git:hover{
+            color: #1f1f22;
+            background-color: white;
+            font-size: 1.1em;
+            transition-duration: .2s;
+        }
+        .valor{
+            color: rgb(13, 155, 13);
+            font-size: 2em;
+            padding: 5px 0px 5px 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.418);
+            position: absolute;
+            bottom: 10px;
+        }
+        .nomeitem{
+            color: white;
+            font-size: 1.5em;
+            padding: 5px 5px 5px 20px;
+        }
+        .aitem{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="shopicon" src="Logoshopping.png" alt="">
+        <h1 class="nome">LIPHS</h1>
+        <a href="" id="carrlink"><img id="carricon" src="Carrinho.png" alt=""></a>
+    </header>
+    <main>
+        <h1>PRODUTOS</h1>
+        <div id="loja">
+            <div class="item">
+               <a class="aitem" target="_blank" href="https://www.pichau.com.br/mouse-gamer-redragon-fyzu-pro-wireless-26000dpi-6-botoes-branco-m995w-pro">
+                <div>
+                    <img class="itemimg" src="imagens/01.png" alt="">
+                    <p class="nomeitem">Mouse Gamer Redragon Fyzu Pro, Wireless, 26000DPI, 6 Botoes, Branco, M995W-PRO</p>
+                    <p class="valor">R$ 239,99</p>
+                </div>
+               </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/headset-gamer-cougar-spettro-bluetooth-drivers-40mm-preto-cgr-spettro-b01">
+                    <div>
+                        <img class="itemimg"
+                        src="imagens/02.png" alt="">
+                        <p class="nomeitem">Headset Gamer Cougar Spettro, Bluetooth, Drivers 40mm, Preto, CGR-SPETTRO-B01</p>
+                        <p class="valor">R$ 699.99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/monitor-gamer-gigabyte-gs27f-27-pol-ips-fhd-1ms-165hz-dp-hdmi-gs27f">
+                    <div>
+                        <img class="itemimg" src="imagens/03.png" alt="">
+                        <p class="nomeitem">Monitor Gamer Gigabyte GS27F, 27 Pol, IPS, FHD, 1ms, 165Hz, DP/HDMI, GS27F</p>
+                        <p class="valor">R$ 1.299,99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/fonte-galax-omega-glx1200-1200w-atx-3-0-pcie-5-0-full-modular-80-plus-platinum-pgo1bgpfnafb0">
+                    <div>
+                        <img class="itemimg" src="imagens/04.png" alt="">
+                        <p class="nomeitem">Fonte Galax Omega GLX1200, 1200W, ATX 3.0, PCIe 5.0, Full-Modular...</p>
+                        <p class="valor"> R$ 1.399,99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/monitor-gamer-mancer-valak-vx3-27-pol-va-curvo-2k-1ms-180hz-freesync-hdmi-dp-mcr-vlkvx3-bl01">
+                    <div>
+                        <img class="itemimg" src="imagens/05.png" alt="">
+                        <p class="nomeitem">Monitor Gamer Mancer Valak VX3, 27 Pol, VA, Curvo, 2K, 1ms, 180Hz, FreeSync, HDMI/DP, MCR-VLKVX3-BL01</p>
+                        <p class="valor"> R$ 1.099,99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/cadeira-gamer-pichau-donek-pro-preto-e-cinza-pch-dnkp-bng">
+                    <div>
+                        <img class="itemimg" src="imagens/06.png" alt="">
+                        <p class="nomeitem">Cadeira Gamer Pichau Donek Pro, Preto e Cinza, PCH-DNKP-BNG
+                        </p>
+                        <p class="valor"> R$ 749,99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/kit-casa-inteligente-zinnia-cr100-crux-wifi-bluetooth-sensor-de-movimento-smart">
+                    <div>
+                        <img class="itemimg" src="imagens/07.png" alt="">
+                        <p class="nomeitem">Kit Casa Inteligente Zinnia, CR100 Crux Wifi + Bluetooth, Sensor De Movimento Smart</p>
+                        <p class="valor"> R$ 79,99</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="item">
+                <a class="aitem" target="_blank" href="https://www.pichau.com.br/cooler-para-processador-thermalright-assassin-x-120-r-se-plus-120mm-tl-c120-bk">
+                    <div>
+                        <img class="itemimg" src="imagens/08.png" alt="">
+                        <p class="nomeitem">Cooler para Processador Thermalright Assassin X 120 R SE Plus, 120mm, TL-C120-BK</p>
+                        <p class="valor"> R$ 149,99</p>
+                    </div>
+                </a> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2> Site feito por <a class="git" target="_blank" href="https://github.com/KuruArt">ArthurS2</a></h2>
+    </footer>
+</body>
+</html>
